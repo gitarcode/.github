@@ -7,12 +7,12 @@ We're a passionate group of developers committed to crafting exceptional develop
 
 Our journey involves developing advanced tools seamlessly woven into the developer lifecycle – from design to production. With a track record of enhancing developer sentiment, we take pride in our contributions to open-source projects like:
 
-* 🔥[Piranha]([url](https://github.com/uber/piranha)): Automating the cleanup of stale feature flags
-* 🔍[Nullaway]([url](https://github.com/uber/NullAway)): Eliminating NullPointerExceptions (NPEs) in Java 
-* 🔧[Nilaway]([url](https://github.com/uber-go/nilaway)): Avoiding nil panics in Go
-* ♻️[OkBuck]([url](https://github.com/uber/okbuck)): Facilitating seamless build system migrations
-* 🚀[Go-PGO]([url](https://go.googlesource.com/proposal/+/master/design/55022-pgo-implementation.md)): Profile Guided Optimizations for Go
+* 🔥[Piranha](https://github.com/uber/piranha): Automating the cleanup of stale feature flags
+* 🔍[Nullaway](https://github.com/uber/NullAway): Eliminating NullPointerExceptions (NPEs) in Java 
+* 🔧[Nilaway](https://github.com/uber-go/nilaway): Avoiding nil panics in Go
+* ♻️[OkBuck](https://github.com/uber/okbuck): Facilitating seamless build system migrations
+* 🚀[Go-PGO](https://go.googlesource.com/proposal/+/master/design/55022-pgo-implementation.md): Profile Guided Optimizations for Go
 
 Join us on this exciting journey, where we aim to pave golden paths for a seamless developer experience. 🌟 #DeveloperTools #RevolutionizingDevEx
 
-Check us on [Twitter]([url](https://twitter.com/gitarcode)https://twitter.com/gitarcode) & [LinkedIn]([url](https://www.linkedin.com/company/gitar/)https://www.linkedin.com/company/gitar/)
+Check us out on [Twitter](https://twitter.com/gitarcode) & [LinkedIn](https://www.linkedin.com/company/gitar/)!
