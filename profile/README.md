@@ -13,6 +13,6 @@ Our journey involves developing advanced tools seamlessly woven into the develop
 * ♻️[OkBuck](https://github.com/uber/okbuck): Facilitating seamless build system migrations
 * 🚀[Go-PGO](https://go.googlesource.com/proposal/+/master/design/55022-pgo-implementation.md): Profile Guided Optimizations for Go
 
-Join us on this exciting journey, where we aim to pave golden paths for a seamless developer experience. 🌟 #DeveloperTools #RevolutionizingDevEx
+Join us on this exciting journey, where we aim to [pave golden paths](https://tanzu.vmware.com/golden-paths) for a seamless developer experience. 🌟 #DeveloperTools #RevolutionizingDevEx
 
 Check us out on [Twitter](https://twitter.com/gitarcode) & [LinkedIn](https://www.linkedin.com/company/gitar/)!
