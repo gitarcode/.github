@@ -1,6 +1,6 @@
 
 <p align="center">
-<img width="440" alt="Brand Symbol - Bubble" src="https://github.com/gitarcode/.github/assets/156238817/4d12a0dc-a7a3-422d-9427-0ae7d42ad78c">
+<img width="220" alt="Brand Symbol - Bubble" src="https://github.com/gitarcode/.github/assets/156238817/4d12a0dc-a7a3-422d-9427-0ae7d42ad78c">
 </p>
 
 We're a passionate group of developers committed to crafting exceptional developer tools. Having felt the pain of using tools that excel in isolation but crumble when integrated. We're on a mission to redefine the developer experience through opinionated and tightly integrated tools.
