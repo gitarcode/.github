@@ -1,7 +1,7 @@
 ## Description
 
 <!-- 
-Please do not leave this blank 
+Can leave blank if title is descriptive enough
 This PR [adds/removes/fixes/replaces] the [feature/bug/etc]. 
 -->
 
