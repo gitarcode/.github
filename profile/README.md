@@ -1,5 +1,11 @@
-<p align="center">
-<a href="https://gitar.ai"><img alt="gitar" src="https://raw.githubusercontent.com/gitarcode/.github/main/assets/gitar-logo.png"/></a>
-<br/>
-The agentic AI to build better software
-</p>
+<div align="center">
+
+[![gitar](https://raw.githubusercontent.com/gitarcode/.github/main/assets/gitar-logo.png)](https://gitar.ai)
+
+<div id="user-content-toc" align="center">
+  <ul>
+  <summary><h1 align="center">The agentic AI to build better software</h1></summary>
+  </ul>
+</div>
+
+</div>
