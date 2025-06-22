@@ -4,7 +4,7 @@
 
 </div>
 
-# Gitar - Autonomous Code Maintenance Agent
+# Gitar
 
 Gitar is your autonomous code maintenance agent, purpose-built to automate complex code maintenance tasks. It automates the engineering toil of migrations, upgrades, remediations, and cleanups, helping you modernize and standardize your tech stack, and keep your codebase compliant, secure, and clean.
 
