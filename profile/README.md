@@ -34,9 +34,8 @@ More details at: [Gitar Documentation](https://docs.gitar.ai)
 
 -----
 
-🚀 **Ready to automate your code maintenance?** [See a demo](https://gitar.ai/demo)
+**Ready to automate your code maintenance?** [See a demo](https://gitar.ai/demo)
 
-🧠 **Learn more:** [Explore our blog](https://gitar.ai/blog) and [watch our videos](https://gitar.ai/videos) 
+**Learn more:** [Explore our blog](https://gitar.ai/blog) and [watch our videos](https://gitar.ai/videos) 
 
-💬 **Join our community:** [Slack](https://join.slack.com/t/gitarcommunity/shared_invite/zt-2v9b1j0mt-mrdX5WRUK0txQ8YLkO9TPw) 
-
+**Join our community:** [Slack](https://join.slack.com/t/gitarcommunity/shared_invite/zt-2v9b1j0mt-mrdX5WRUK0txQ8YLkO9TPw)
