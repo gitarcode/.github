@@ -4,9 +4,7 @@
 
 </div>
 
-# Gitar
-
-**Automated CI fixes and code review assistance**
+# Automated CI fixes and code review assistance
 
 Gitar automatically fixes failing CI pipelines and responds to code review comments, accelerating your development cycle and reducing manual intervention.
 
