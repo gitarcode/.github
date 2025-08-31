@@ -6,36 +6,37 @@
 
 # Gitar
 
-Gitar is your autonomous code maintenance agent, purpose-built to automate complex code maintenance tasks. It automates the engineering toil of migrations, upgrades, remediations, and cleanups, helping you modernize and standardize your tech stack, and keep your codebase compliant, secure, and clean.
+**Automated CI fixes and code review assistance**
 
-## ✨ Features
+Gitar automatically fixes failing CI pipelines and responds to code review comments, accelerating your development cycle and reducing manual intervention.
 
-### 🤖 Automated PRs
-Automatically generates Pull Requests to maintain and update your codebase.
+## Key Features
 
-### 🚀 Migrations
-Seamlessly migrates languages, APIs, and platforms to modernize and standardize your tech stack.
+### 🔧 Automated CI Fixes
+- **Instant Problem Resolution**: Automatically diagnoses and resolves failing tests, linting errors, and build issues in your PRs
+- **Intelligent Analysis**: Analyzes CI failure logs and generates precise code changes to fix issues
+- **Automated Pull Requests**: Updates PRs with automatic fixes, ready for review
 
-### ⬆️ Upgrades
-Keeps your projects up-to-date by upgrading libraries, platforms, and frameworks, ensuring you are always on the latest, most secure versions.
+### 💬 Code Review Assistance  
+- **Smart Feedback Implementation**: Intelligently responds to code review feedback by implementing requested changes
+- **Team Standards Adaptation**: Adapts to your team's specific coding standards and workflows
+- **Seamless Integration**: Works within your existing review process
 
-### 🧹 Cleanups
-Improves codebase health by removing dead code, stale feature flags, and duplicate code.
+## Getting Started
 
-### 🌐 Language Support
-Offers support for all major programming languages and frameworks.
+1. **Create Account**: Sign up at [gitar.ai](https://gitar.ai)
+2. **Connect Repositories**: Link your GitHub or GitLab repositories
+3. **Connect CI Providers**: Integrate with your CI pipeline
+4. **Start Automating**: Gitar begins fixing issues automatically
 
-### 🔧 Customization
-Allows you to tailor Gitar to your team's specific needs by composing custom migrations and integrating with your existing tools and workflows.
+## Resources
 
-## 🚀 Getting Started
+- **📖 Documentation**: [docs.gitar.ai](https://docs.gitar.ai)
+- **🎮 Try Demo**: [gitar.ai/demo](https://gitar.ai/demo)
+- **📝 Blog**: [gitar.ai/blog](https://gitar.ai/blog)
+- **📺 Videos**: [gitar.ai/videos](https://gitar.ai/videos)
+- **Join our community:** [Slack](https://join.slack.com/t/gitarcommunity/shared_invite/zt-2v9b1j0mt-mrdX5WRUK0txQ8YLkO9TPw)
 
-More details at: [Gitar Documentation](https://docs.gitar.ai)
+## Try for Free
 
------
-
-**Ready to automate your code maintenance?** [See a demo](https://gitar.ai/demo)
-
-**Learn more:** [Explore our blog](https://gitar.ai/blog) and [watch our videos](https://gitar.ai/videos) 
-
-**Join our community:** [Slack](https://join.slack.com/t/gitarcommunity/shared_invite/zt-2v9b1j0mt-mrdX5WRUK0txQ8YLkO9TPw)
+Ready to automate your CI fixes? [Start your free trial](https://gitar.ai) today
