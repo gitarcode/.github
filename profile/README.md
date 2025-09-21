@@ -4,37 +4,26 @@
 
 </div>
 
-# Automated CI fixes and code review assistance
+# Gitar is your CI agent
 
-Gitar automatically fixes failing CI pipelines and responds to code review comments, accelerating your development cycle and reducing manual intervention.
+[Gitar](https://gitar.ai) automatically fixes broken builds, failing tests, and addresses code review feedback, saving you hours every day and keeping your development
+flow uninterrupted.
 
-## Key Features
+## Getting started
 
-### 🔧 Automated CI Fixes
-- **Instant Problem Resolution**: Automatically diagnoses and resolves failing tests, linting errors, and build issues in your PRs
-- **Intelligent Analysis**: Analyzes CI failure logs and generates precise code changes to fix issues
-- **Automated Pull Requests**: Updates PRs with automatic fixes, ready for review
+1. **Install GitHub App**: Add Gitar to your repositories. No account or credit card required
+2. **Start Using**: Gitar automatically monitors your PRs and can be triggered with comments starting with `Gitar`
+3. **Stay Focused**: Get real-time updates without leaving your code review interface
 
-### 💬 Code Review Assistance  
-- **Smart Feedback Implementation**: Intelligently responds to code review feedback by implementing requested changes
-- **Team Standards Adaptation**: Adapts to your team's specific coding standards and workflows
-- **Seamless Integration**: Works within your existing review process
+*[Enterprise features](https://docs.gitar.ai/enterprise/quickstart) available for organizations requiring advanced controls and integrations.*
 
-## Getting Started
+## How it works
 
-1. **Create Account**: Sign up at [gitar.ai](https://gitar.ai)
-2. **Connect Repositories**: Link your GitHub or GitLab repositories
-3. **Connect CI Providers**: Integrate with your CI pipeline
-4. **Start Automating**: Gitar begins fixing issues automatically
+- Get automatic fixes for failing builds and tests on your PRs/MRs
+- Automatically address review feedback like: fix bugs, improve test coverage and update documentation etc.
+- Gain back focus time by letting Gitar handle tasks in the background
+- Stay updated on progress without leaving your code review UI
 
-## Resources
+Stop wasting time on broken builds. Let Gitar handle CI failures and code review comments automatically.
 
-- **📖 Documentation**: [docs.gitar.ai](https://docs.gitar.ai)
-- **🎮 Try Demo**: [gitar.ai/demo](https://gitar.ai/demo)
-- **📝 Blog**: [gitar.ai/blog](https://gitar.ai/blog)
-- **📺 Videos**: [gitar.ai/videos](https://gitar.ai/videos)
-- **Join our community:** [Slack](https://join.slack.com/t/gitarcommunity/shared_invite/zt-2v9b1j0mt-mrdX5WRUK0txQ8YLkO9TPw)
-
-## Try for Free
-
-Ready to automate your CI fixes? [Start your free trial](https://gitar.ai) today
+**📖 [Documentation](https://docs.gitar.ai)** **💬 [Community](https://join.slack.com/t/gitarcommunity/shared_invite/zt-2v9b1j0mt-mrdX5WRUK0txQ8YLkO9TPw)**
