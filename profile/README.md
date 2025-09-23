@@ -3,11 +3,6 @@
 [![gitar](https://raw.githubusercontent.com/gitarcode/.github/main/assets/gitar-profile.png)](https://gitar.ai)
 
 </div>
-<div align="center">
-
-[![gitar](https://raw.githubusercontent.com/gitarcode/.github/main/assets/gitar-profile.png)](https://gitar.ai)
-
-</div>
 
 # Gitar is your CI agent
 
