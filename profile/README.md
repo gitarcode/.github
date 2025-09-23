@@ -3,19 +3,23 @@
 [![gitar](https://raw.githubusercontent.com/gitarcode/.github/main/assets/gitar-profile.png)](https://gitar.ai)
 
 </div>
+<div align="center">
+
+[![gitar](https://raw.githubusercontent.com/gitarcode/.github/main/assets/gitar-profile.png)](https://gitar.ai)
+
+</div>
 
 # Gitar is your CI agent
 
-[Gitar](https://gitar.ai) automatically fixes broken builds, failing tests, and addresses code review feedback, saving you hours every day and keeping your development
-flow uninterrupted.
+[Gitar](https://gitar.ai) automatically fixes broken builds and failing tests, and addresses code review feedback, saving you hours every day and keeping your development flow uninterrupted.
 
 ## Getting started
 
-1. **Install GitHub App**: Add Gitar to your repositories. No account or credit card required
-2. **Start Using**: Gitar automatically monitors your PRs and can be triggered with comments starting with `Gitar`
-3. **Stay Focused**: Get real-time updates without leaving your code review interface
+1. **Install GitHub App**: Add Gitar to your repositories. No account or credit card required.
+2. **Start Using**: Gitar automatically monitors your PRs and suggests or commits fixes for failing builds and tests. You can also trigger Gitar with comments starting with `Gitar` to fix bugs, improve test coverage, update documentation, and automatically perform other tasks during code review.
+3. **Stay Focused**: Gitar provides real-time updates directly in your GitHub PR allowing you see progress directly in your code review interface.
 
-*[Enterprise features](https://docs.gitar.ai/enterprise/quickstart) available for organizations requiring advanced controls and integrations.*
+*[Enterprise features](https://go.gitar.ai/enterprise) available for organizations requiring advanced controls and integrations.*
 
 ## How it works
 
