@@ -6,7 +6,7 @@
 
 # Supercharge CI with AI
 
-[Gitar](https://gitar.ai) Gitar is the intelligence layer that turns CI into an agent platform. It automatically fixes broken builds and failing tests, and addresses code review feedback, saving you hours every day and keeping your development flow uninterrupted.
+[Gitar](https://gitar.ai) is the intelligence layer that turns CI into an agent platform. It automatically fixes broken builds and failing tests, and addresses code review feedback, saving you hours every day and keeping your development flow uninterrupted.
 
 ## Getting started
 
