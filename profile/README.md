@@ -4,7 +4,7 @@
 
 </div>
 
-# AI code review that fixes your code automatically — not just comments on it
+# AI code review that fixes your code automatically
 
 [Gitar](https://gitar.ai) is AI code review that doesn't just comment - it fixes your code and validates every change against CI.
 
