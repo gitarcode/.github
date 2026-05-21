@@ -1,6 +1,6 @@
 <div align="center">
 
-[![gitar](https://raw.githubusercontent.com/gitarcode/.github/main/assets/gitar-profile.png)](https://gitar.ai)
+[![gitar](https://raw.githubusercontent.com/gitarcode/.github/main/assets/github-profile.png)](https://gitar.ai)
 
 </div>
 
