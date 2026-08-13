@@ -84,6 +84,10 @@ VARIANTS = {
     svg(13, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.92),
     "same fix rendered at 13",
   ),
+  "h-14-centered": (
+    svg(14, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.92),
+    "same fix at 14, closest to the text cap height",
+  ),
   "f-16-nospin": (
     svg(16, "0 0 16 16", spin_center=(8, 8), jitter=False).replace(spin(8, 8), ""),
     "static glyph, no animation - control for whether animation is the problem",
