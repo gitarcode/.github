@@ -31,12 +31,19 @@ BODY = (
 FILL = "#9966CC"
 INK_CENTER = (7.97, 7.99)  # measured, not estimated
 
-JITTER = (
-  '<animateTransform attributeName="transform" calcMode="spline" dur="3.2s"'
-  ' keySplines="0.2 0 0.2 1; 0.2 0 0.2 1; 0.2 0 0.2 1; 0.25 0 0.6 1; 0 0 1 1"'
-  ' keyTimes="0;0.12;0.28;0.46;0.58;1" repeatCount="indefinite" type="translate"'
-  ' values="0 0; 0.8 -0.5; -0.7 0.7; 0.5 0.4; 0 0; 0 0"/>'
-)
+JITTER_STOPS = [(0, 0), (0.8, -0.5), (-0.7, 0.7), (0.5, 0.4), (0, 0), (0, 0)]
+
+
+def jitter(amp=1.0):
+  """Wobble, scaled by amp. The wobble is what forces the ink to shrink: the ink has to
+  fit its own rotation circle (radius 8.108) plus the wobble inside a half-box of 8."""
+  vals = "; ".join(f"{round(x * amp, 3)} {round(y * amp, 3)}" for x, y in JITTER_STOPS)
+  return (
+    '<animateTransform attributeName="transform" calcMode="spline" dur="3.2s"'
+    ' keySplines="0.2 0 0.2 1; 0.2 0 0.2 1; 0.2 0 0.2 1; 0.25 0 0.6 1; 0 0 1 1"'
+    ' keyTimes="0;0.12;0.28;0.46;0.58;1" repeatCount="indefinite" type="translate"'
+    f' values="{vals}"/>'
+  )
 
 
 def spin(cx, cy):
@@ -47,7 +54,7 @@ def spin(cx, cy):
   )
 
 
-def svg(size, view_box, spin_center=(8, 8), recenter_scale=None, jitter=True):
+def svg(size, view_box, spin_center=(8, 8), recenter_scale=None, jitter_amp=1.0):
   """Build one variant.
 
   recenter_scale: if set, wrap the ink in a static transform that moves its true
@@ -58,7 +65,7 @@ def svg(size, view_box, spin_center=(8, 8), recenter_scale=None, jitter=True):
   if recenter_scale is not None:
     tx, ty = INK_CENTER
     ink = f'<g transform="translate(8 8) scale({recenter_scale}) translate({-tx} {-ty})">{ink}</g>'
-  inner = (JITTER if jitter else "") + ink
+  inner = (jitter(jitter_amp) if jitter_amp else "") + ink
   return (
     f'<svg xmlns="http://www.w3.org/2000/svg" width="{size}" height="{size}"'
     f' viewBox="{view_box}"><g>{inner}</g></svg>'
@@ -103,7 +110,7 @@ VARIANTS = {
     "same fix at 12px",
   ),
   "l-11-nojitter": (
-    svg(11, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.98, jitter=False),
+    svg(11, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.98, jitter_amp=0),
     "11px, no jitter, so the ink only has to fit the spin - biggest glyph of the three",
   ),
   # The shipping candidate: intrinsic 16 so markup can cap it at any size <= 16, ink
@@ -112,12 +119,24 @@ VARIANTS = {
     svg(16, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.86),
     "intrinsic 16, ink scaled 0.86 - size it from the markup",
   ),
+  "o-16-jit50": (
+    svg(16, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.925, jitter_amp=0.5),
+    "half wobble, ink 0.925 - largest that still clears at 50% jitter",
+  ),
+  "p-16-jit25": (
+    svg(16, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.956, jitter_amp=0.25),
+    "quarter wobble, ink 0.956",
+  ),
+  "q-16-nojit": (
+    svg(16, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.986, jitter_amp=0),
+    "no wobble, ink 0.986 - biggest glyph that never clips",
+  ),
   "h-14-centered": (
     svg(14, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.92),
     "same fix at 14, closest to the text cap height",
   ),
   "f-16-nospin": (
-    svg(16, "0 0 16 16", spin_center=(8, 8), jitter=False).replace(spin(8, 8), ""),
+    svg(16, "0 0 16 16", spin_center=(8, 8), jitter_amp=0).replace(spin(8, 8), ""),
     "static glyph, no animation - control for whether animation is the problem",
   ),
   "g-13-tight": (
