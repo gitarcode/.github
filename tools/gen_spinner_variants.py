@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Generate gitar-spin variants for badge rendering tests.
 
-The glyph lives in a 16x16 design box but its ink is not centred in it:
-bbox is roughly x[2.00, 13.95], y[2.40, 11.80], so the centre is (7.97, 7.10),
-not (8, 8). Rotating about (8, 8) - what ships today - swings the ink through a
-circle of radius ~7.6 offset from the box centre, which is the clipping #4 tried
-to fix by padding the viewBox instead of fixing the rotation origin.
+Ink bbox, measured with getBBox in a browser rather than estimated: x[2.00, 13.94],
+y[2.51, 13.47], so the centre is (7.97, 7.99), i.e. the ink is already centred in the
+16x16 box and rotating about (8, 8) is the right origin.
+
+What does clip: the corner-to-centre radius is 8.13 against a half-box of 8, and the
+jitter adds up to 0.99 more. So the ink needs to be about 14% smaller to spin inside
+the box. Scaling about the centre is the fix. #4 padded the viewBox instead, which
+keeps the same overflow while shrinking the glyph inside a bigger transparent margin.
 
 Usage: python3 tools/gen_spinner_variants.py
 Writes assets/lab/*.svg and prints the variant table.
@@ -26,7 +29,7 @@ BODY = (
 )
 
 FILL = "#9966CC"
-INK_CENTER = (7.97, 7.10)
+INK_CENTER = (7.97, 7.99)  # measured, not estimated
 
 JITTER = (
   '<animateTransform attributeName="transform" calcMode="spline" dur="3.2s"'
@@ -83,6 +86,31 @@ VARIANTS = {
   "e-13-centered": (
     svg(13, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.92),
     "same fix rendered at 13",
+  ),
+  # Round 3. Correct geometry fix: keep viewBox 0 0 16 16 and the (8, 8) rotation
+  # origin, just scale the ink so a full spin plus the jitter stays inside the box.
+  # 8 / 8.13 = 0.98 covers the spin, 7.01 / 8.13 = 0.86 also covers the jitter.
+  "i-11-scaled": (
+    svg(11, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.86),
+    "11px, ink scaled 0.86 - spin and jitter both fit",
+  ),
+  "j-11-plain": (
+    svg(11, "0 0 16 16"),
+    "11px, unscaled - control, clips by ~1 unit at the extremes",
+  ),
+  "k-12-scaled": (
+    svg(12, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.86),
+    "same fix at 12px",
+  ),
+  "l-11-nojitter": (
+    svg(11, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.98, jitter=False),
+    "11px, no jitter, so the ink only has to fit the spin - biggest glyph of the three",
+  ),
+  # The shipping candidate: intrinsic 16 so markup can cap it at any size <= 16, ink
+  # scaled so a full spin plus jitter never leaves the box.
+  "n-16-scaled": (
+    svg(16, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.86),
+    "intrinsic 16, ink scaled 0.86 - size it from the markup",
   ),
   "h-14-centered": (
     svg(14, "0 0 16 16", spin_center=INK_CENTER, recenter_scale=0.92),
